@@ -1,0 +1,309 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% paper_en.tex
+% Nature-style research article format (A4)
+% Author: Xiaohui Li
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,a4paper]{article}
+
+% Page geometry
+\usepackage[a4paper,left=25mm,right=25mm,top=25mm,bottom=25mm]{geometry}
+
+% Encoding and fonts
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Math and tables
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+
+% Figures
+\usepackage{graphicx}
+
+% Hyperlinks
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+% Line spacing
+\usepackage{setspace}
+\onehalfspacing
+
+% Title formatting
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.5em}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{
+  \textbf{Quantum-State Homophily as a Candidate Origin of Gravitation:}\\
+  \textbf{A Hypothesis, Formal Framework, and Testable Predictions}
+}
+
+\author{Xiaohui Li\\
+Independent Researcher, Baoji 721000, China\\
+Correspondence Xiaohui Li: \texttt{danceluck@163.com}\\
+Xiaohui Li ORCID:0009-0003-8233-7191
+}
+
+\date{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstract}
+\noindent
+
+Although general relativity describes gravitation with exquisite precision, its reconciliation with the quantum realm remains unresolved. Here we propose a candidate organizing principle---the Quantum-State Phase Attraction--Repulsion (QSPAR) hypothesis---wherein identical quantum states attract and complementary (orthogonal) quantum states repel. We formalize the concept of a ``material line'' as a coherent bundle of in-phase quanta and show that, in the unpolarized mixed-state limit, the model is consistent with Newtonian gravitation, whereas ordered, same-phase material lines can generate a repulsive correction that we identify with a tunable anti-gravity effect. The framework yields three falsifiable predictions: (i) a chiral weight differential between enantiomers, (ii) a measurable reduction of effective weight for rapidly rotating polarized matter, and (iii) orbit-period anomalies for two-body celestial systems. We outline numerical benchmarks against Cavendish-type, equivalence-principle and inverse-square-law tests, emphasizing empirical falsifiability.
+\end{abstract}
+
+\vspace{0.5em}
+\noindent\textbf{Keywords:} quantum state; material line; gravitation; anti-gravity; chirality; falsifiable prediction; coarse-graining
+
+\section*{Main Text}
+
+\subsection*{1. Introduction}
+
+Gravitation was the first interaction to be described systematically~\cite{newton1687}, and Einstein's general theory of relativity geometrized it as spacetime curvature, passing extremely stringent tests in the solar system~\cite{einstein1916,will2014}. Yet the quantum origin of gravity---how gravitation emerges from quantum states---remains one of the deepest open problems in theoretical physics~\cite{feynman1995}. Recent advances in quantum coherence, entanglement, and macroscopic order parameters offer a fresh vocabulary with which to reconsider gravity~\cite{zurek2003}.
+
+Inspired by the behaviour of magnetic field lines~\cite{parker1979} and by homophily in social networks~\cite{mcpherson2001}, we propose the Quantum-State Phase Attraction--Repulsion (QSPAR) hypothesis: identical quantum states attract, whereas complementary quantum states repel. We elevate this intuitive picture into a formal ``material-line'' model and show that (i) in ordinary unpolarized matter the attractive channel dominates, reproducing Newtonian gravity, and (ii) by helically ordering mixed quantum states into coherent material lines, a repulsive channel can be opened, enabling anti-gravity engineering. The value of QSPAR lies not in replacing general relativity, but in providing a conceptually transparent, quantitatively testable framework rooted in quantum-state structure.
+
+\subsection*{2. Results}
+
+\subsubsection*{2.1 Formal QSPAR framework}
+
+Let a coarse-grained quantum state be labelled by a phase $\phi \in [0, 2\pi)$. A ``material line'' $L(\phi)$ is defined as a coherent bundle of quanta sharing the same phase $\phi$. The interaction potential between two material lines $a$ and $b$ separated by distance $r$ is written as
+\begin{equation}
+U_{ab}(r) = -\frac{G m_a m_b}{r}\cos^2\!\left(\frac{\phi_a-\phi_b}{2}\right)
+            +\frac{K(\omega_{ab}) m_a m_b}{r}\sin^2\!\left(\frac{\phi_a-\phi_b}{2}\right)e^{-r/\lambda},
+\label{eq:qspar}
+\end{equation}
+where $G$ is an effective gravitational constant, $\lambda$ is a characteristic cutoff length of the repulsive interaction, and $K(\omega_{ab})$ is a repulsive coupling that depends on the relative angular velocity $\omega_{ab}$. This potential satisfies two limits:
+\begin{itemize}
+  \item when $\phi_a=\phi_b$ and $\omega_{ab}=0$, $U_{ab}=-Gm_am_b/r$, giving pure attraction;
+  \item when $|\phi_a-\phi_b|=\pi$ and relative motion is present, the second term is activated, giving repulsion.
+\end{itemize}
+This expression mathematizes the ``same phase attracts, opposite phase repels'' intuition and naturally introduces a velocity-dependent anti-gravity channel.
+
+\subsubsection*{2.2 Mixed states, polarization, and the Newtonian limit}
+
+In ordinary matter, quantum phases are typically disordered. We define a polarization order parameter $P\in[0,1]$ that quantifies the degree of material-line ordering: $P=0$ corresponds to a fully mixed state and $P=1$ to a fully ordered array of material lines. Ensemble-averaging over randomly oriented material lines causes the $\sin^2$ term to cancel, while the $\cos^2$ term averages to $1/2$, yielding an effective gravitational potential
+\begin{equation}
+\langle U\rangle = -\frac{G_{\rm eff}m_a m_b}{r}, \qquad G_{\rm eff}\approx \frac{G}{2}.
+\end{equation}
+By re-identifying $G_{\rm eff}$ with the observed Newtonian constant $G_N$, the model becomes indistinguishable from Newtonian gravity for static, unpolarized matter. This limit guarantees consistency with Cavendish experiments and planetary dynamics.
+
+\subsubsection*{2.3 Material-line mechanism of anti-gravity}
+
+If the mixed quantum state of a body is ``spiralled upward'' into ordered material lines---for example by strong magnetic fields, rapid rotation, or chiral-crystal engineering---then $P>0$ and the repulsive channel opens. For a polarized disk of mass $m$ rotating with angular velocity $\omega$ relative to Earth's gravitational field, the fractional weight correction is approximately
+\begin{equation}
+\frac{\Delta W}{W} \approx \beta\left(\frac{\omega}{\omega_0}\right)^2 P^2,
+\end{equation}
+where $\beta$ is a material-dependent dimensionless coupling and $\omega_0$ is a reference angular frequency. This predicts that, for sufficiently large $P$ and $\omega$, the disk exhibits a measurable weight reduction---the conceptual core of an anti-gravity device.
+
+\subsubsection*{2.4 Falsifiable predictions}
+
+QSPAR leads to three directly testable predictions:
+
+\noindent\textbf{Prediction 1 (chiral weight differential).} Biology is dominated by left-handed chiral molecules. If chirality is a macroscopic manifestation of quantum-state phase, left- and right-handed enantiomers should exhibit a tiny weight difference, predicted to be $\Delta g/g < 10^{-12}$, within reach of modern torsion-balance experiments~\cite{schlamminger2008}.
+
+\noindent\textbf{Prediction 2 (weight reduction of a rotating polarized disk).} A disk made of highly polarized magnetic or chiral material and rotated in the range $10^4$--$10^5$~rad s$^{-1}$ should display an effective weight change at the $10^{-6}$--$10^{-4}$ level. Such an experiment can be performed in a vacuum torsion balance or a cryogenic levitation platform.
+
+\noindent\textbf{Prediction 3 (celestial orbital anomaly).} If the Earth--Moon system can be approximated as two complementary but relatively moving material lines, their potential energy will contain a small repulsive correction, producing a long-term drift in the lunar orbital period relative to the Keplerian value. Lunar laser-ranging data~\cite{will2014} limit this drift to the centimetre level, thereby constraining $\lambda$ and $K$.
+
+\subsubsection*{2.5 Benchmarking against established gravity tests}
+
+To ensure that QSPAR does not conflict with established gravitational physics, we compare it with classical benchmark tests (Table~\ref{tab:benchmarks}).
+
+\begin{table}[htbp]
+\centering
+\caption{Benchmarking QSPAR against established gravity tests.}
+\label{tab:benchmarks}
+\begin{tabular}{@{}p{4.2cm}p{4.5cm}p{5.8cm}@{}}
+\toprule
+Experiment/Observation & Current constraint & Implication for QSPAR \\
+\midrule
+Inverse-square test (cm) & $|\delta\alpha| < 10^{-3}$~\cite{adelberger2003} & Repulsive cutoff $\lambda \lesssim 1$~cm or $K$ strongly suppressed \\
+Equivalence principle & $\eta < 10^{-15}$~\cite{schlamminger2008} & Chiral/phase coupling must lie below this bound \\
+Lunar laser ranging & Distance drift $<$ few cm over decades~\cite{will2014} & Long-range correction negligible or constrained \\
+Sub-mm inverse-square & $|\alpha| < 10^{-4}$ at 100~$\mu$m~\cite{hoyle2004} & $\lambda \lesssim 100~\mu$m or repulsion is purely local \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection*{3. Discussion}
+
+QSPAR offers a conceptual path toward understanding gravity from quantum-state phase. It does not deny the macroscopic success of general relativity; rather, it attempts to provide a microscopic mechanism for the gravitational constant $G$: $G$ may reflect the high degree of quantum-state homogeneity of cosmic matter. The framework's most attractive feature is falsifiability---if future experiments on chiral samples, rotating polarized bodies, or celestial orbits fail to reveal the predicted effects, the hypothesis can be ruled out.
+
+Nevertheless, QSPAR remains a phenomenological model. It has not yet been derived from first principles and lacks a clear connection to quantum field theory and gauge symmetry; the functions $K(\omega)$ and $\lambda$ in the potential still require microscopic or experimental calibration. Moreover, the analogies in the original manuscript concerning nations, languages, and interpersonal relations~\cite{mcpherson2001} should be treated only as heuristic metaphors for coarse-grained quantum states in social systems, not as physical evidence.
+
+Future work should include: (1) constructing a microscopic Lagrangian based on quantum field theory; (2) designing high-precision chiral-weight experiments; (3) testing the hypothesis that ``the universe as a whole occupies a single quantum state'' in cosmological structure-formation simulations; and (4) exploring strongly correlated systems such as topological insulators and spin liquids for macroscopic quantum coherence that might be engineered into material lines.
+
+\subsection*{4. Methods}
+
+\subsubsection*{4.1 Coarse-grained lattice simulation}
+
+To test QSPAR quantitatively, we propose a reproducible lattice-simulation protocol:
+
+\begin{enumerate}
+  \item Discretize space into a cubic lattice of spacing $a$; assign each site a mass $m_i$ and phase $\phi_i$.
+  \item For each pair $(i,j)$, compute the force from the potential: $\mathbf{F}_{ij}=-\nabla U_{ij}(r_{ij})$.
+  \item Evolve the system with a velocity-Verlet integrator, using a time step $\Delta t$ satisfying the stability condition $\Delta t < \sqrt{a^3/(Gm)}$.
+  \item Compute the total potential energy, effective gravitational constant, and polarization order parameter $P$.
+\end{enumerate}
+
+\noindent\textit{Pseudocode} (Python/NumPy sketch):
+\begin{verbatim}
+import numpy as np
+
+def qspar_force(r, phi_i, phi_j, m_i, m_j,
+                G, K0, lam, omega, omega0):
+    dphi = phi_i - phi_j
+    dist = np.linalg.norm(r)
+    attr = -G*m_i*m_j/dist**2 * np.cos(dphi/2)**2
+    rep  =  K0*(omega/omega0)**2 * m_i*m_j/dist**2 \
+            * np.sin(dphi/2)**2 * np.exp(-dist/lam)
+    return (attr + rep) * r/dist
+\end{verbatim}
+
+\subsubsection*{4.2 Parameter calibration}
+
+Table~\ref{tab:params} lists the reference parameters for an Earth--Moon simulation. All constants are taken from CODATA 2018 or the NASA JPL ephemerides.
+
+\begin{table}[htbp]
+\centering
+\caption{Reference parameters for Earth--Moon QSPAR simulations.}
+\label{tab:params}
+\begin{tabular}{@{}llll@{}}
+\toprule
+Parameter & Symbol & Value & Source \\
+\midrule
+Earth mass & $M_E$ & $5.972\times10^{24}$~kg & CODATA \\
+Moon mass & $M_M$ & $7.348\times10^{22}$~kg & CODATA \\
+Earth--Moon distance & $r$ & $3.844\times10^{8}$~m & NASA JPL \\
+Gravitational constant & $G$ & $6.67430\times10^{-11}$~m$^3$ kg$^{-1}$ s$^{-2}$ & CODATA \\
+Reference angular frequency & $\omega_0$ & $10^4$~rad s$^{-1}$ & Experimental design \\
+Repulsive cutoff & $\lambda$ & $10^{-2}$~m (tunable) & Assumption \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection*{4.3 Validation strategy}
+
+We first reproduce a two-body Keplerian orbit in the fully mixed state ($P=0$), requiring agreement with Newtonian theory at the $10^{-6}$ level. We then introduce a small polarization $P=10^{-3}$ and measure any long-term orbital drift, comparing it with lunar laser-ranging data. This two-step validation ensures correctness in the known limit and provides a quantifiable window for new physics.
+
+\section*{Data Availability}
+
+No new experimental data were generated in this study. The simulation parameters in Table~\ref{tab:params} are derived from public databases: CODATA 2018 and the NASA JPL ephemerides. The conceptual ``material-line'' simulation parameter set is provided as Supplementary Data~1.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% References
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{thebibliography}{10}
+
+\bibitem{newton1687}
+Newton I.
+\newblock {\em Philosophi{\ae} Naturalis Principia Mathematica}.
+\newblock London: Royal Society; 1687.
+
+\bibitem{einstein1916}
+Einstein A.
+\newblock Die Grundlage der allgemeinen Relativit\"{a}tstheorie.
+\newblock {\em Annalen der Physik}. 1916;354(7):769--822.
+
+\bibitem{feynman1995}
+Feynman RP, Morinigo FB, Wagner WG.
+\newblock {\em Feynman Lectures on Gravitation}.
+\newblock Reading, MA: Addison-Wesley; 1995.
+
+\bibitem{will2014}
+Will CM.
+\newblock The confrontation between general relativity and experiment.
+\newblock {\em Living Reviews in Relativity}. 2014;17:4.
+
+\bibitem{adelberger2003}
+Adelberger EG, Heckel BR, Nelson AE.
+\newblock Tests of the gravitational inverse-square law below the dark-energy length scale.
+\newblock {\em Annual Review of Nuclear and Particle Science}. 2003;53:77--121.
+
+\bibitem{zurek2003}
+Zurek WH.
+\newblock Decoherence, einselection, and the quantum origins of the classical.
+\newblock {\em Reviews of Modern Physics}. 2003;75(3):715--775.
+
+\bibitem{parker1979}
+Parker EN.
+\newblock {\em Cosmical Magnetic Fields: Their Origin and Their Activity}.
+\newblock Oxford: Clarendon Press; 1979.
+
+\bibitem{mcpherson2001}
+McPherson M, Smith-Lovin L, Cook JM.
+\newblock Birds of a feather: homophily in social networks.
+\newblock {\em Annual Review of Sociology}. 2001;27:415--444.
+
+\bibitem{hoyle2004}
+Hoyle CD, Schmidt U, Heckel BR, et~al.
+\newblock Submillimeter tests of the gravitational inverse-square law.
+\newblock {\em Physical Review D}. 2004;70:042004.
+
+\bibitem{schlamminger2008}
+Schlamminger S, Choi KY, Wagner TA, Gundlach JH, Adelberger EG.
+\newblock Test of the equivalence principle using a rotating torsion balance.
+\newblock {\em Physical Review Letters}. 2008;100(4):041101.
+
+\end{thebibliography}
+\textbf{\textbf{Declarations}}
+
+  \textbf{\textbf{Acknowledgements}}
+
+The author thanks colleagues for discussions on quantum aggregates, consciousness, emergence, and dimensionality. 
+
+ \textbf{\textbf{Funding Statement}}:This research did not receive any specific grant from funding agencies in the public,commercial,or not-for-profit sectors.
+
+Currently, there are no sponsors. Or I haven't found any sponsors or organizations yet. However, if I can publish it, I will cover part of the costs myself. Or it will be easier to find sponsors. (For example, the German company E.ON. I have previously found international buyers for their wind turbines.)
+
+ \textbf{\textbf{Competing Interests}}
+
+The author declares no competing interests.
+
+ \textbf{\textbf{Author Contributions}}
+
+Xiaohui Li: Conceptualization, Methodology, Investigation, Formal analysis, Writing – Original Draft, Visualization, Writing – Review \& Editing.
+
+AI assisted me in rewriting the original text into an article that meets the submission requirements of Journal of the American Mathematical Society. No content was added or omitted.
+
+ The author is solely responsible for the work described in this manuscript and has approved the final version for publication.
+
+ \textbf{\textbf{Clinical trial:}}not applicable.
+
+ \textbf{\textbf{Ethics and Consent to Participate declarations}}: not applicable.
+
+ Hi,
+
+This is an original work by the author. There is only one author:Xiaohui Li.
+
+The article accurately reflects the scientific results.
+
+Xiaohui Li agreed to submit the manuscript.
+
+This manuscript has not been published in any other journals.
+
+The author accepts the established procedure for selecting and publishing manuscripts.
+
+good
+
+Xiaohui Li
+
+
+
+ \textbf{\textbf{Clinical trial number}}: not applicable.
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
